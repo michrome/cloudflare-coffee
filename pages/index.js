@@ -34,6 +34,23 @@ export default function Home({ headers }) {
           </thead>
           <tbody>{headerRows}</tbody>
         </table>
+        <h2>
+          Is traffic to{" "}
+          <a href="https://www.cloudflare.coffee">www.cloudflare.coffee</a>{" "}
+          proxed through Cloudflare?
+        </h2>
+        <p>
+          Yes. We can confirm traffic is proxied using the Cloudflare dashboard
+          and we can see <samp>cf-*</samp> headers in the table above.
+        </p>
+        <p>
+          <img
+            src="/proxy-through-cloudflare.png"
+            width={2048}
+            height={406}
+            alt="Cloudflare dashboard showing traffic to www.cloudflare.coffee is proxied through Cloudflare"
+          />
+        </p>
       </article>
     </div>
   );

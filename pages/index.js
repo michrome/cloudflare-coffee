@@ -4,10 +4,12 @@ export default function Home({ headers }) {
     headerRows.push(
       <tr key={header}>
         <td>
-          <samp className="whitespace-nowrap">{header}</samp>
-        </td>
-        <td>
-          <samp>{headers[header]}</samp>
+          <details>
+            <summary className="focus:outline-none">
+              <samp className="whitespace-nowrap">{header}</samp>
+            </summary>
+            <samp className="ml-10">{headers[header]}</samp>
+          </details>
         </td>
       </tr>
     );
@@ -24,16 +26,15 @@ export default function Home({ headers }) {
       <table>
         <thead>
           <tr>
-            <th>Header</th>
-            <th>Value</th>
+            <th>HTTP Header</th>
           </tr>
         </thead>
         <tbody>{headerRows}</tbody>
       </table>
       <h2>
         Is traffic to{" "}
-        <a href="https://www.cloudflare.coffee">www.cloudflare.coffee</a> proxed
-        through Cloudflare?
+        <a href="https://www.cloudflare.coffee">www.cloudflare.coffee</a>{" "}
+        proxied through Cloudflare?
       </h2>
       <p>
         Yes. We can confirm traffic is proxied using the Cloudflare dashboard
@@ -57,9 +58,15 @@ export default function Home({ headers }) {
 }
 
 export async function getServerSideProps(context) {
+  const sortedHeaders = Object.keys(context.req.headers)
+    .sort()
+    .reduce((obj, key) => {
+      obj[key] = context.req.headers[key];
+      return obj;
+    }, {});
   return {
     props: {
-      headers: { ...context.req.headers },
+      headers: { ...sortedHeaders },
     },
   };
 }

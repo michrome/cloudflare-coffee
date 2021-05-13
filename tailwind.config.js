@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       dropShadow: {
-        mug: "0 10px 25px #F5821F",
+        "cf-orange": "0 10px 25px #F5821F",
       },
     },
   },

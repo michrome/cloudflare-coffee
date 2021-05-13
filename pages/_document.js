@@ -15,13 +15,15 @@ class MyDocument extends Document {
             <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
               <header className="flex justify-center">
                 <h1 className="hidden">cloudflare.coffee</h1>
-                <img
-                  src="/mug.png"
-                  width={380}
-                  height={321}
-                  className="h-14 sm:h-28 w-auto filter drop-shadow-cf-orange"
-                  alt="Coffee mug with 1.1.1.1 typed on it"
-                />
+                <a href="/">
+                  <img
+                    src="/mug.png"
+                    width={380}
+                    height={321}
+                    className="h-14 sm:h-28 w-auto filter drop-shadow-cf-orange"
+                    alt="Coffee mug with 1.1.1.1 typed on it"
+                  />
+                </a>
               </header>
               <Main />
             </article>

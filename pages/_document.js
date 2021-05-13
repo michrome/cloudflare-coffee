@@ -19,11 +19,8 @@ class MyDocument extends Document {
                   src="/mug.png"
                   width={380}
                   height={321}
-                  className="h-14 sm:h-28 w-auto"
+                  className="h-14 sm:h-28 w-auto filter drop-shadow-cf-orange"
                   alt="Coffee mug with 1.1.1.1 typed on it"
-                  style={{
-                    filter: "drop-shadow(0 10px 25px #F5821F)",
-                  }}
                 />
               </header>
               <Main />

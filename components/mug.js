@@ -6,7 +6,7 @@ export default function Mug() {
           src="/mug.png"
           width={380}
           height={321}
-          className="h-14 sm:h-28 w-auto filter drop-shadow-cf-orange"
+          className="h-14 sm:h-28 w-auto filter drop-shadow-cf-orange transform hover:rotate-6"
           alt="Coffee mug with 1.1.1.1 typed on it"
         />
       </a>

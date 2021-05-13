@@ -48,7 +48,7 @@ export default function Home({ headers }) {
       <h2>Secure Communication Between Cloudflare and the Origin Server</h2>
       <p>
         The communication between Cloudflare and the Origin Server is encrypted.
-        The encryption is enabled using the <var>Full</var> encryption mode in
+        The encryption is enabled using the <samp>Full</samp> encryption mode in
         the Cloudflare dashboard.
         <img
           src="/full-encryption-mode.png"

@@ -1,3 +1,7 @@
+export const config = {
+  unstable_runtimeJS: false,
+};
+
 export default function Secure() {
   return (
     <>

@@ -6,7 +6,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="preload" href="/mug.png" as="image" />
         <title>☕️ cloudflare.coffee</title>
       </Head>
       <Component {...pageProps} />

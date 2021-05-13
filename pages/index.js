@@ -82,6 +82,10 @@ export default function Home({ headers }) {
           />
         </li>
       </ol>
+      <h2>Cloudflare Worker</h2>
+      <p>
+        See <a href="/worker">a page served via a Cloudflare worker.</a>
+      </p>
       <h2>Secure page</h2>
       <p>
         Access to <a href="/secure">the secure page</a> is restricted to a

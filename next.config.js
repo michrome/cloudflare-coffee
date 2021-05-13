@@ -2,14 +2,14 @@ module.exports = {
   async headers() {
     return [
       {
-        source: '/mug.png',
+        source: "/:slug(.*[.](png|css))",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'max-age=31536000',
+            key: "Cache-Control",
+            value: "max-age=31536000",
           },
         ],
       },
-    ]
+    ];
   },
-}
+};

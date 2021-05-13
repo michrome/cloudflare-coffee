@@ -1,3 +1,7 @@
+export const config = {
+  unstable_runtimeJS: false,
+};
+
 export default function Home({ headers }) {
   const headerRows = [];
   for (const header in headers) {

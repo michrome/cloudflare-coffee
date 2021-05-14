@@ -47,8 +47,8 @@ export default function Worker() {
     <>
       <h2>This Page Is Served via a Cloudflare Worker</h2>
       <p>
-        The route <samp>*.cloudflare.coffee/worker</samp> triggers a worker
-        named <samp>redirect</samp> which runs the following script.
+        The route <code>*.cloudflare.coffee/worker</code> triggers a worker
+        named <code>redirect</code> which runs the following script.
       </p>
       <pre>
         <code>{workerCode}</code>
@@ -64,8 +64,8 @@ export default function Worker() {
         <code>{curl}</code>
       </pre>
       <p>
-        cURL clients can avoid the redirect by using a <samp>cf-noredir</samp>{" "}
-        cookie with a value of <samp>true</samp>.
+        cURL clients can avoid the redirect by using a <code>cf-noredir</code>{" "}
+        cookie with a value of <code>true</code>.
       </p>
       <pre>
         <code>{curlWithCookie}</code>

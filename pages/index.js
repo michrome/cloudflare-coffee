@@ -37,7 +37,7 @@ export default function Home({ headers }) {
       </table>
       <p>
         We can confirm traffic is proxied using the Cloudflare dashboard and we
-        can see <samp>cf-*</samp> headers in the table above.
+        can see <code>cf-*</code> headers in the table above.
         <img
           src="/proxy-through-cloudflare.png"
           width={2048}
@@ -48,7 +48,7 @@ export default function Home({ headers }) {
       <h2>Secure Communication Between Cloudflare and the Origin Server</h2>
       <p>
         The communication between Cloudflare and the Origin Server is encrypted.
-        The encryption is enabled using the <samp>Full</samp> encryption mode in
+        The encryption is enabled using the <code>Full</code> encryption mode in
         the Cloudflare dashboard.
         <img
           src="/full-encryption-mode.png"
@@ -86,7 +86,7 @@ export default function Home({ headers }) {
       <p>
         See <a href="/worker">a page served via a Cloudflare worker.</a>
       </p>
-      <h2>Secure page</h2>
+      <h2>Secure Page</h2>
       <p>
         Access to <a href="/secure">the secure page</a> is restricted to a
         particular user or a group of users.

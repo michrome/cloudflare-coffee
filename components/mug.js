@@ -1,6 +1,6 @@
 export default function Mug() {
   return (
-    <div className="flex justify-center">
+    <nav className="flex justify-center">
       <a href="/">
         <img
           src="/mug.png"
@@ -10,6 +10,6 @@ export default function Mug() {
           alt="Coffee mug with 1.1.1.1 typed on it"
         />
       </a>
-    </div>
+    </nav>
   );
 }

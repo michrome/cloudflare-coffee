@@ -91,6 +91,7 @@ export default function Home({ headers }) {
         Access to <a href="/secure">the secure page</a> is restricted to a
         particular user or a group of users.
       </p>
+      <h2>Tunnel</h2>
     </>
   );
 }

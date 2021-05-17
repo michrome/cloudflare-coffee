@@ -102,7 +102,7 @@ export default function Home({ headers }) {
         , the communication between Cloudflare and the Origin Server is
         encrypted. The encryption is enabled using the <code>Full</code>{" "}
         encryption mode in the Cloudflare dashboard, taking advantage of the
-        certification provided by Heroku.
+        certificate provided by Heroku.
         <img
           src="/full-encryption-mode.png"
           width={1922}

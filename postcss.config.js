@@ -2,7 +2,7 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
-    purgecss: {
+    "@fullhuman/postcss-purgecss": {
       whitelist: ["focus:outline-none", "whitespace-nowrap", "ml-10"],
     },
   },

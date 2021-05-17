@@ -45,7 +45,7 @@ server: cloudflare`;
 export default function Worker() {
   return (
     <>
-      <h2>This Page Is Served via a Cloudflare Worker</h2>
+      <h2>This Page Is Served by a Cloudflare Worker</h2>
       <p>
         The route <code>*.cloudflare.coffee/worker</code> triggers a worker
         named <code>redirect</code> which runs the following script.

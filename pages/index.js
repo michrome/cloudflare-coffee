@@ -196,8 +196,8 @@ export default function Home({ headers }) {
       </p>
       <p>
         <em>
-          Note: it is possible to side-step this protection using because this
-          demo allows access via the <code>herokuapp.com</code> domain
+          Note: it is possible to side-step this protection because this demo
+          allows access via the <code>herokuapp.com</code> domain
         </em>
         .
       </p>
@@ -242,7 +242,7 @@ export default function Home({ headers }) {
         Runtime API.
       </p>
       <h3>Learnings</h3>
-      <p>My main learnings from this project are:is that</p>
+      <p>My main learnings from this project are:</p>
       <ul>
         <li>
           Cloudflare greatly simplifies the process of setting up certificates
@@ -263,7 +263,7 @@ export default function Home({ headers }) {
         </li>
         <li>
           Cloudflare Pages and Workers are the “Edge” future for many apps,
-          because the security and performance they provide.
+          because of the security and performance they provide.
         </li>
       </ul>
       <h3>Source Code</h3>

@@ -52,7 +52,7 @@ export default function Home({ headers }) {
             <th>HTTP Header</th>
           </tr>
         </thead>
-        <tbody>{headerRows}</tbody>
+        <tbody id="headers">{headerRows}</tbody>
       </table>
       <p>
         We can confirm traffic is proxied using the Cloudflare dashboard and we
@@ -285,16 +285,16 @@ export default function Home({ headers }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const sortedHeaders = Object.keys(context.req.headers)
-    .sort()
-    .reduce((obj, key) => {
-      obj[key] = context.req.headers[key];
-      return obj;
-    }, {});
-  return {
-    props: {
-      headers: { ...sortedHeaders },
-    },
-  };
-}
+// export async function getServerSideProps(context) {
+//   const sortedHeaders = Object.keys(context.req.headers)
+//     .sort()
+//     .reduce((obj, key) => {
+//       obj[key] = context.req.headers[key];
+//       return obj;
+//     }, {});
+//   return {
+//     props: {
+//       headers: { ...sortedHeaders },
+//     },
+//   };
+// }

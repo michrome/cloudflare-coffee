@@ -180,8 +180,8 @@ export default function Home({ headers }) {
       </ol>
       <img
         src="/argo-tunnel.png"
-        width={1922}
-        height={1108}
+        width={1647}
+        height={1884}
         alt="Diagram showing different traffic routes for hostnames"
       />
       <h2>Cloudflare Worker</h2>
@@ -223,8 +223,8 @@ export default function Home({ headers }) {
       </p>
       <img
         src="/distance-between-pops.png"
-        width={1647}
-        height={1884}
+        width={2969}
+        height={814}
         alt="Diagram showing there are 3500 miles between Harrogate and North Virginia"
       />
       <p>

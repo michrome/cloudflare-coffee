@@ -285,16 +285,16 @@ export default function Home({ headers }) {
   );
 }
 
-// export async function getServerSideProps(context) {
-//   const sortedHeaders = Object.keys(context.req.headers)
-//     .sort()
-//     .reduce((obj, key) => {
-//       obj[key] = context.req.headers[key];
-//       return obj;
-//     }, {});
-//   return {
-//     props: {
-//       headers: { ...sortedHeaders },
-//     },
-//   };
-// }
+export async function getServerSideProps(context) {
+  const sortedHeaders = Object.keys(context.req.headers)
+    .sort()
+    .reduce((obj, key) => {
+      obj[key] = context.req.headers[key];
+      return obj;
+    }, {});
+  return {
+    props: {
+      headers: { ...sortedHeaders },
+    },
+  };
+}

@@ -217,7 +217,7 @@ export default function Home({ headers }) {
       </ul>
       <p>
         However, every request we make requires a trip to North Virginia because
-        that‘s where the compute that renders the request headers happens. For a
+        that’s where the compute that renders the request headers happens. For a
         user in Harrogate, the images can be served by a Cloudflare cache in
         Manchester but the HTML requires a 7,000 mile round trip!
       </p>
@@ -240,6 +240,9 @@ export default function Home({ headers }) {
           </a>
         </code>{" "}
         Runtime API.
+      </p>
+      <p>
+        🆕 here’s <a href="/cf-pages">more detail</a>.
       </p>
       <h3>Learnings</h3>
       <p>My main learnings from this project are:</p>

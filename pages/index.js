@@ -233,7 +233,7 @@ export default function Home({ headers }) {
       <p>
         A more performant solution would be to use Cloudflare Pages in
         combination with a Cloudflare Worker. Because this is a{" "}
-        <a hre="https://nextjs.org">Next.js</a> application, it can be exported
+        <a href="https://nextjs.org">Next.js</a> application, it can be exported
         as static HTML, making it compatible with Cloudflare Pages. The dynamic
         element of the page (the request headers) could be added to the HTML
         using the Cloudflare Worker{" "}

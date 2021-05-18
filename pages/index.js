@@ -190,14 +190,14 @@ export default function Home({ headers }) {
       </p>
       <h2>Secure Page</h2>
       <p>
-        An email account at the domain <code>@cloudflare.com</code> or{" "}
-        <code>@j4e.name</code> is required to access{" "}
+        An email account at the domain <samp>@cloudflare.com</samp> or{" "}
+        <samp>@j4e.name</samp> is required to access{" "}
         <a href="/secure">the secure page</a>.
       </p>
       <p>
         <em>
           Note: it is possible to side-step this protection because this demo
-          allows access via the <code>herokuapp.com</code> domain
+          allows access via the <samp>herokuapp.com</samp> domain
         </em>
         .
       </p>
@@ -207,8 +207,7 @@ export default function Home({ headers }) {
       <ul>
         <li>
           The Argo tunnel avoids the need to run our app on the{" "}
-          <code>herokuapp.com</code>
-          domain;
+          <samp>herokuapp.com</samp> domain;
         </li>
         <li>Image assets are cached at the edge by Cloudflare; and</li>
         <li>

@@ -97,9 +97,11 @@ export default function Page() {
         <tbody>
           <tr>
             <td>
-              <code>web-dyno.cloudflare.coffee</code>
+              <samp className="whitespace-nowrap">
+                web-dyno.cloudflare.coffee
+              </samp>
               <br />
-              Direct to Heroku
+              Cloudflare proxy to Heroku
             </td>
             <td className="text-right">{webDynoTime}</td>
             <td className="text-right">
@@ -108,9 +110,9 @@ export default function Page() {
           </tr>
           <tr>
             <td>
-              <code>www.cloudflare.coffee</code>
+              <samp className="whitespace-nowrap">www.cloudflare.coffee</samp>
               <br />
-              Cloudflare proxy to Heroku
+              Cloudflare Argo tunnel to Heroku
             </td>
             <td className="text-right">{cfProxyTime}</td>
             <td className="text-right">
@@ -121,7 +123,7 @@ export default function Page() {
           </tr>
           <tr className="bg-yellow-100">
             <td>
-              <code>pages.cloudflare.coffee</code>
+              <samp className="whitespace-nowrap">pages.cloudflare.coffee</samp>
               <br />
               Cloudflare Pages & Cloudflare Worker
             </td>
